@@ -5,7 +5,7 @@ import com.pantek.word2vec.CLibraryWord2vec;
 public class Word2vec {
 
 	public static void main(String[] args){
-		int i=CLibraryWord2vec.Instance.InitWord2vec("Data/","");
+		int i=CLibraryWord2vec.Instance.InitWord2vec("","");
 		System.out.println(i);
 		CLibraryWord2vec.Instance.InitPara(200, "dang.bin", "words-all.txt", 1, Float.parseFloat("0.025"), "vectors.txt", 8, Float.parseFloat("1e-4"), 1, 25, 1, 15, 1);
 		CLibraryWord2vec.Instance.Train();
